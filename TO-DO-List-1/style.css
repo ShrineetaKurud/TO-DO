@@ -1,0 +1,136 @@
+/*Component Styling*/
+:root{
+    --primary-color: #70d7f3;
+    --card-color: #fffefe;
+    --button-color: #b9fd5a;
+    --text-color: #a7adad;
+    --icon-color: #656d6d;
+    --card-shadow: 0px 0px 25px -4px rgba(0,0,0,0);
+    --btn-hover-color: #b9fa5e;
+    --white-color: #fff;
+}
+
+
+/*Default styling*/
+body{
+    font-family: roboto, inherit;
+    background-color:var(--primary-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;      
+}
+
+button{
+    border:none;
+    outline: none;
+    background: transparent;
+}
+
+p{
+    font-family: roboto;
+    padding: 20px;
+    letter-spacing: 0.5px;
+}
+
+/*header*/
+
+.heading{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background:var(--button-color);
+}
+
+.heading i{
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Add button*/
+
+.btn {
+    background-color: var(--button-color);
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    padding: 12px 35px;
+    text-align: center;
+    text-transform: uppercase;        
+    box-shadow: 0 0 5px rgb(0,0,0,0.1);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+ }
+
+ .btn:hover {
+    background-color: var(--btn-hover-color);
+    font-weight: bolder;
+ }
+
+
+/*cards*/
+.container{
+    display: flex;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notes{
+    width: 250px;
+    margin: 2rem;
+}
+
+/*icons*/
+.notes .tools{
+    display: flex;
+    padding: 0.6rem;
+    justify-content: flex-end;
+    background-color: var(--button-color);
+}
+
+.tools button i{
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--icon-color);
+}
+
+.notes .main{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--card-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.2);
+}
+
+.notes textarea{
+    height: 250px;
+    width: 98%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    resize: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.none{
+    display: none;
+}
+

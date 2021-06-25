@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #9a39fa, #e85efa);
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin: 3rem;
+    cursor: pointer;
+    color: white;
+}
+
+form{
+    margin: auto;
+    max-width: 100%;
+    width: 750px;
+}
+
+.inputcont{
+    display:flex;
+}
+
+button{
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+}
+
+button:hover{
+    color: rebeccapurple;
+}
+
+
+.input{
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    padding: 0.7rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fafafa;
+}
+
+
+.todos{
+    background-color: #fafafa;
+    padding: 0;
+    margin-top: 10%;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.todos li{
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos li div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-btn{
+    margin-left: 0.2rem;
+    color: rgb(131, 70, 192);
+    transition: 0.3s all ease;
+    font-size: 1.3rem;
+}
+
+.check-btn:hover{
+    color: mediumvioletred;
+}
+
+.delete-btn{
+    color: mediumvioletred;
+    font-size: 1.3rem;
+    transition: 0.3s all ease;
+
+}
+
+.delete-btn:hover{
+    color: rebeccapurple;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #b5b5b5;
+}
